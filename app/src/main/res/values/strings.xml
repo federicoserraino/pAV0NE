@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">pAV0NE</string>
+    <string name="title_home">Local</string>
+    <string name="title_dashboard">Online</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_show_video">ShowVideo</string>
+
+    <string-array name="prova">
+        <item>120p</item>
+        <item>480p</item>
+        <item>720p</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="15dp"
+    android:layout_centerVertical="true">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/preview"
+            android:layout_width="200dp"
+            android:layout_height="112.5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+            android:src="@drawable/logo_pavone_edges"
+            android:scaleType="centerCrop"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#66000000"
+            android:layout_alignStart="@id/preview"
+            android:layout_alignBottom="@+id/preview"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Prova"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                android:layout_toStartOf="@id/ic_more"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ic_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/ic_more_vert" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

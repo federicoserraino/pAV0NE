@@ -1,0 +1,23 @@
+{
+  "server_uri": "https://media.polito.it/downloads/linbo/dash/",
+  "samples": [
+    {
+      "title": "Big Buck Bunny",
+      "manifest_path": "big_buck_bunny_avc/manifest.mpd",
+      "logo_path": "big_buck_bunny_avc/logo.jpg",
+      "media_codec": "avc"
+    },
+    {
+      "title": "Elephants Dream",
+      "manifest_path": "elephants_dream_hevc/manifest.mpd",
+      "logo_path": "elephants_dream_hevc/logo.jpg",
+      "media_codec": "hevc"
+    },
+    {
+      "title": "Sintel Trailer",
+      "manifest_path": "sintel_trailer_av1/manifest.mpd",
+      "logo_path": "sintel_trailer_av1/logo.jpg",
+      "media_codec": "av01"
+    }
+  ]
+}

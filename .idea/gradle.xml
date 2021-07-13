@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/av1" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/cast" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/cronet" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/ffmpeg" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/flac" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/gvr" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/ima" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/jobdispatcher" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/leanback" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/media2" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/mediasession" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/okhttp" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/opus" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/rtmp" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/vp9" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/extensions/workmanager" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/all" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/common" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/core" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/dash" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/extractor" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/hls" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/smoothstreaming" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/transformer" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/library/ui" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/robolectricutils" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/testdata" />
+            <option value="$USER_HOME$/Desktop/ExoPlayer/testutils" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

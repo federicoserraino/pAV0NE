@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#80000000"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/bn_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_alignParentStart="true"
+        android:layout_margin="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:layout_centerVertical="true">
+
+
+        <LinearLayout
+            android:id="@+id/layout_playback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/exo_rew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_backward"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:id="@+id/exo_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play_white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/exo_pause"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_pause"/>
+
+            <ImageView
+                android:id="@+id/exo_ffwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_forward"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exo_progress">
+
+        <LinearLayout
+            android:id="@+id/media_quality_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Quality  •"
+                app:drawableStartCompat="@drawable/ic_setting_white"
+                android:drawablePadding="4dp"/>
+
+            <TextView
+                android:id="@+id/media_quality_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginStart="6dp"
+                android:text="Auto"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/bn_full_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_fullscreen_open"/>
+
+        <ImageView
+            android:id="@+id/bn_repeat_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bn_full_screen"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_repeat_off"/>
+
+    </RelativeLayout>
+
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:layout_margin="4dp"
+        android:id="@+id/exo_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playback_details"
+        app:unplayed_color="@color/secondary_text"
+        app:buffered_color="@color/divider"
+        app:played_color="@color/snackbar_positive" />
+
+    <LinearLayout
+        android:id="@+id/playback_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginStart="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginEnd="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

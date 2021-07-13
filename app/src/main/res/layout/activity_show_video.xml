@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ShowVideo.ShowVideoActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:resize_mode="fit"
+        app:hide_on_touch="true"
+        app:show_timeout="4000"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
+        android:background="@android:color/background_dark"
+        app:use_controller="true"
+        app:controller_layout_id="@layout/playback_controller"
+        app:surface_type="surface_view"
+        />
+
+    <ProgressBar
+        android:id="@+id/progess_bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

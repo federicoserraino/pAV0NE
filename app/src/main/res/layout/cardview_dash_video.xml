@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="15dp"
+    android:layout_centerVertical="true"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dash_preview"
+            android:layout_width="180dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/logo_pavone_edges"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/dash_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/dash_preview"
+            android:textAlignment="center"
+            android:text="Big Buck Bunny"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="2"/>
+
+        <TextView
+            android:id="@+id/dash_codec_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/dash_preview"
+            android:text="Media codec: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_below="@id/dash_title"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/dash_media_codec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/dash_codec_desc"
+            android:text="AV1"
+            android:textAllCaps="true"
+            android:textStyle="italic"
+            android:layout_toEndOf="@id/dash_codec_desc"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

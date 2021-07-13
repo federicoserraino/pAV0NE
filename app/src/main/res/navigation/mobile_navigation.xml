@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_local">
+
+    <fragment
+        android:id="@+id/navigation_local"
+        android:name="com.example.provapp3.ui.LocalVideos.LocalVideosFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_local_vodeos">
+        <action
+            android:id="@+id/action_navigation_local_to_local_video_info"
+            app:destination="@id/local_video_Info"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_online"
+        android:name="com.example.provapp3.ui.OnlineVideos.DashVideosFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_online_dash_videos" />
+    <fragment
+        android:id="@+id/local_video_Info"
+        android:name="com.example.provapp3.ui.LocalVideoInfo.LocalVideoInfoFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_local_video_info"/>
+
+</navigation>
