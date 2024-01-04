@@ -1,4 +1,4 @@
-## pAV1
+## pAVONE
 
 Player-AV1, a multimedia player crafted specifically for Android devices. 
 
