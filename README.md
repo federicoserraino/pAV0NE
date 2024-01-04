@@ -1,6 +1,6 @@
 ## pAV0NE
 
-Player-AV1, a multimedia player crafted specifically for Android devices. 
+Player-AV1, an open source multimedia player crafted specifically for Android devices. 
 
 Developed using Kotlin and powered by ExoPlayer, it empowers users to seamlessly play multimedia content stored on their devices or accessible through adaptive streaming MPEG-DASH. Featuring the GAV1 decoder implementation, it excels in supporting AV1 video format. 
 
